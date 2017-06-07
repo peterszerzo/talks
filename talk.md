@@ -317,24 +317,6 @@ type alias Spec problem guess =
 
 class: middle
 
-### In the abstract
-
-```elm
-type alias Spec problem guess =
-    { view : Context guess -> problem -> Html guess
-    , isGuessCorrect : problem -> guess -> Bool
-    , problemGenerator : Random.Generator problem
-    , problemEncoder : problem -> Value
-    , problemDecoder : Decoder problem
-    , guessEncoder : guess -> Value
-    , guessDecoder : Decoder guess
-    }
-```
-
----
-
-class: middle
-
 ### `elm-gameroom` main API
 
 ```elm
@@ -346,8 +328,6 @@ program :
 ---
 
 class: middle
-
-### Lovely type variables
 
 ```elm
 module List exposing (..)
