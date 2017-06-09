@@ -85,9 +85,6 @@ class: middle
 --
 * Deploy simply (really simply).
 
---
-* Contain most of the logic in a single package.
-
 ---
 
 class: middle
@@ -95,10 +92,10 @@ class: middle
 ## Rewind to the original Lettero
 
 --
-* `Node.js` back-end holds on to game state, reconciles scores and calls new rounds.
+* `Node.js` back-end: runs the show.
 
 --
-* `Elm` frontend: nice-to-have for speed, correctness and reliability. Lean on logic.
+* `Elm` frontend: nice-to-have for devX and reliability; lean on logic.
 
 --
 * Communicate with websockets.
@@ -122,13 +119,13 @@ class: middle
 ### And so..
 
 --
-* Have all clients subscribe to the game room state.
+* All clients subscribe to the game room state.
 
 --
-* Designate one of them as host.
+* One of them is designated as host.
 
 --
-* Have the host call the shots and keep the score.
+* Host calls the shots and keeps the score.
 
 ---
 
@@ -181,10 +178,6 @@ class: middle
 class: middle
 
 ## What is unique to Lettero?
-
---
-
-> Feel free to 🐛 interrupt 🐛 with questions :).
 
 ---
 
@@ -329,20 +322,6 @@ program :
 
 class: middle
 
-```elm
-module List exposing (..)
-
--- Any a
-filter : (a -> Bool) -> List a -> List a
-
--- Any a, any b
-map : (a -> b) -> List a -> List b
-```
-
----
-
-class: middle
-
 ### Setting up
 
 ```elm
@@ -356,6 +335,20 @@ type alias Guess = YetAnotherAnything
 spec = nuts and bolts of the spec
 
 main = program spec
+```
+
+---
+
+class: middle
+
+```elm
+module List exposing (..)
+
+-- Any a
+filter : (a -> Bool) -> List a -> List a
+
+-- Any a, any b
+map : (a -> b) -> List a -> List b
 ```
 
 ---
