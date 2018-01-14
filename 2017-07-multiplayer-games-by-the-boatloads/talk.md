@@ -12,19 +12,19 @@ class: middle
 
 class: center, middle
 
-![WordRail problem setup](/media/wordrail-problem-setup.png)
+![WordRail problem setup](media/wordrail-problem-setup.png)
 
 ---
 
 class: center, middle
 
-![WordRail simplified](/media/wordrail-simplified.png)
+![WordRail simplified](media/wordrail-simplified.png)
 
 ---
 
 class: center, middle
 
-![WordRail solution](/media/wordrail-simplified-solved.png)
+![WordRail solution](media/wordrail-simplified-solved.png)
 
 ---
 
@@ -48,7 +48,7 @@ class: middle
 
 class: center, middle
 
-![Game inspiration](/media/game-inspiration.jpg)
+![Game inspiration](media/game-inspiration.jpg)
 
 ---
 
@@ -131,31 +131,31 @@ class: middle
 
 class: center, middle
 
-![Dataflow sketch step 1](/media/elm-gameroom-dataflow-sketch-1.jpg)
+![Dataflow sketch step 1](media/elm-gameroom-dataflow-sketch-1.jpg)
 
 ---
 
 class: center, middle
 
-![Dataflow sketch step 2](/media/elm-gameroom-dataflow-sketch-2.jpg)
+![Dataflow sketch step 2](media/elm-gameroom-dataflow-sketch-2.jpg)
 
 ---
 
 class: center, middle
 
-![Dataflow sketch step 3](/media/elm-gameroom-dataflow-sketch-3.jpg)
+![Dataflow sketch step 3](media/elm-gameroom-dataflow-sketch-3.jpg)
 
 ---
 
 class: center, middle
 
-![Dataflow sketch step 4](/media/elm-gameroom-dataflow-sketch-4.jpg)
+![Dataflow sketch step 4](media/elm-gameroom-dataflow-sketch-4.jpg)
 
 ---
 
 class: center, middle
 
-![Dataflow sketch step 5](/media/elm-gameroom-dataflow-sketch-5.jpg)
+![Dataflow sketch step 5](media/elm-gameroom-dataflow-sketch-5.jpg)
 
 ---
 
@@ -440,13 +440,13 @@ class: middle
 
 class: center, middle
 
-![Dataflow sketch step 1](/media/elm-gameroom-dataflow-sketch-1.jpg)
+![Dataflow sketch step 1](media/elm-gameroom-dataflow-sketch-1.jpg)
 
 ---
 
 class: center, middle
 
-![Dataflow sketch step 1](/media/elm-gameroom-dataflow-sketch-5.jpg)
+![Dataflow sketch step 1](media/elm-gameroom-dataflow-sketch-5.jpg)
 
 ---
 
@@ -580,7 +580,7 @@ class: middle
 
 class: middle
 
-![elm-gameroom on Ellie](/media/elm-gameroom-ellie.jpg)
+![elm-gameroom on Ellie](media/elm-gameroom-ellie.jpg)
 
 ???
 Ellie example is available under https://ellie-app.com/3kf5zPMQY9za1/0.
