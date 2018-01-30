@@ -87,19 +87,15 @@ const tellTheTime = Component => {
 
 class: middle
 
-## Rules !!
-
---
-
-* Mixins are dead. Long live composition.
-
---
-
-* Server calls in reducers are wrong.
+### Rules !!
 
 --
 
 * Keep components under 100/80/50 lines of code.
+
+--
+
+* Server calls in reducers are wrong.
 
 --
 
@@ -159,13 +155,37 @@ class: center, middle, hero
 
 ---
 
-class: center, middle, hero
+class: middle
 
-# Take your framework dancing
+### Peter Szerzo 
 
-### Assorted React.js pet projects
+--
 
-@peter|s`z`erzo
+* [peter s(z)erzo]
+
+--
+
+* peterszerzo (.com, @, ..)
+
+--
+
+* dev+design at [Contiamo](https://contiamo.com)
+
+---
+
+class: center, middle
+
+![Operational UI](media/operational-ui.jpg)
+
+https://github.com/Contiamo/operational-ui
+
+---
+
+class: center, middle
+
+<img src="media/process-flow.png" width="480" alt="Process Flow"/>
+
+https://ui.contiamo.com/visualizations/process-flow
 
 ---
 
