@@ -539,7 +539,6 @@ class: middle
   ► reducers
   ► actions
   ► epics/sagas/binders/packs
-  ► utils
 ```
 
 ---
@@ -552,7 +551,7 @@ class: middle
   ► containers
   ► reducers
   ► actions
-  ► epics|sagas|binders|packs
+  ► epics/sagas/binders/packs
   ▼ utils
       kittens.js
       staplers.js
@@ -563,7 +562,7 @@ class: middle
 
 class: middle
 
-> Is there a more true-to-function representation of a user interface's code?
+> Is there a more humane representation of a user interface's code?
 
 ---
 
@@ -584,6 +583,10 @@ https://peterszerzo.github.io/elm-arborist
 class: center, middle
 
 ### Meet 🥚 Egg
+
+--
+
+https://peterszerzo.github.io/elm-arborist/Egg
 
 ---
 
