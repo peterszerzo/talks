@@ -13,11 +13,15 @@ class: middle
 class: middle
 
 ```js
-React.createElement("button", {
-  onClick: () => {
-    this.setState({ count: this.state.count + 1 })
-  }
-}, this.state.count)
+React.createElement(
+  "button",
+  {
+    onClick: () => {
+      this.setState({ count: this.state.count + 1 })
+    }
+  },
+  "Increment me: " + this.state.count
+)
 ```
 
 ---
@@ -28,7 +32,7 @@ class: middle
 <button onClick={() => {
   this.setState({ count : this.state.count + 1 })
 }}>
-  {this.state.count}
+  {"Increment me: " + this.state.count}
 </button>
 ```
 
@@ -61,37 +65,15 @@ const Input = props => (
 
 class: middle
 
-```js
-const tellTheTime = Component => {
-  return class extends React.Component {
-    state = {
-      time: 0
-    }
-
-    componentDidMount() {
-      setInterval(() => {
-        this.setState(prevState => ({
-          time: prevState.time + 1
-        }))
-      }, 1000)
-    }
-
-    render() {
-      return <Component time={this.state.time} />
-    }
-  }
-}
-```
-
----
-
-class: middle
-
 ### Rules !!
 
 --
 
 * Keep components under 100/80/50 lines of code.
+
+--
+
+* Keep render under 10 lines of code.
 
 --
 
@@ -263,8 +245,7 @@ class: center, middle
 
 class: center, middle
 
-<iframe style="background-color: #FFF; border: 0" width="800px" height="600px" src="http://splytlight.surge.sh">
-
+<iframe style="background-color: #FFF; border: 0" width="800px" height="600px" src="https://peterszerzo.github.io/splytlight">
 
 ---
 
@@ -370,6 +351,7 @@ class: center, middle
 <iframe width="800" height="450" src="https://www.youtube.com/embed/MAYWsyDcAPQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ---
+
 
 class: middle
 
@@ -504,6 +486,12 @@ class: middle
 
 ---
 
+class: center, middle
+
+<iframe style="background-color: #FFF; border: 0" width="800px" height="600px" src="https://peterszerzo.github.io/twisty-donut-racer">
+
+---
+
 class: middle
 
 ## 3. Out of `Atom` and up the tree
@@ -575,7 +563,7 @@ class: middle
 
 class: middle
 
-> Is there a way to work with a program in a form that is more expressive to its structure?
+> Is there a more true-to-function representation of a user interface's code?
 
 ---
 
