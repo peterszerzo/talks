@@ -303,6 +303,8 @@ class: center, middle
 
 ![Splytlight](media/splytlight.jpg)
 
+Splyt Light by Jason Krugman and Scott Leinweber
+
 ---
 
 class: center, middle
