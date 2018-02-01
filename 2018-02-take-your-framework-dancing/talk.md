@@ -15,12 +15,48 @@ class: middle
 ```js
 React.createElement(
   "button",
+  {},
+  0
+)
+
+```
+
+---
+
+class: middle
+
+```js
+<button>
+  {0}
+</button>
+```
+
+--
+
+```js
+/*   _______
+ *  |       |
+ *  |   0   |
+ *  |_______|
+ */
+```
+
+---
+
+class: middle
+
+```js
+// Let's increment!
+React.createElement(
+  "button",
   {
     onClick: () => {
-      this.setState({ count: this.state.count + 1 })
+      this.setState({
+        count: this.state.count + 1 
+      })
     }
   },
-  "Increment me: " + this.state.count
+  this.state.count
 )
 ```
 
@@ -30,10 +66,22 @@ class: middle
 
 ```js
 <button onClick={() => {
-  this.setState({ count : this.state.count + 1 })
+  this.setState({
+    count : this.state.count + 1
+  })
 }}>
   {"Increment me: " + this.state.count}
 </button>
+```
+
+--
+
+```js
+/*   _______      _______
+ *  |       |    |       |
+ *  |   0   | →  |   1   |
+ *  |_______|    |_______|
+ */
 ```
 
 ---
@@ -53,6 +101,7 @@ this.props
 class: middle
 
 ```js
+// First controlled component 🎉
 const Input = props => (
   <input 
     value={props.value} 
@@ -168,6 +217,13 @@ class: center, middle
 <img src="media/process-flow.png" width="480" alt="Process Flow"/>
 
 https://ui.contiamo.com/visualizations/process-flow
+
+---
+
+### Slides
+
+* github.com/peterszerzo/talks
+* watch Twitter
 
 ---
 
@@ -366,7 +422,7 @@ class: middle
 class: middle
 
 ```js
-// Adventure: a single ►
+// WebGL Adventure: a single ►
 
 const canvas = document.getElementById("mycanvas")
 gl = canvas.getContext("webgl")
@@ -606,11 +662,11 @@ class: middle
 
 --
 
-* It is not just for the DOM
+* It runs anywhere you like
 
 --
 
-* It can run anywhere you like
+* Every know and then, it likes to go for a dance 💃 🕺
 
 ---
 
