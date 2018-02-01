@@ -220,6 +220,8 @@ https://ui.contiamo.com/visualizations/process-flow
 
 ---
 
+class: middle
+
 ### Slides
 
 * github.com/peterszerzo/talks
