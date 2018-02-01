@@ -69,43 +69,43 @@ class: middle
 
 --
 
-* Keep components under 100/80/50 lines of code.
+* Keep components under 100/80/50 lines of code
 
 --
 
-* Keep render under 10 lines of code.
+* Keep render under 10 lines of code
 
 --
 
-* Server calls in reducers are wrong.
+* Server calls in reducers are wrong
 
 --
 
-* Prefer controlled components.
+* Prefer controlled components
 
 --
 
-* Use code splitting.
+* Use code splitting
 
 --
 
-* Use immutable data structures.
+* Use immutable data structures
 
 --
 
-* Class component ordering: lifecycle methods, handlers, helpers, render.
+* Class component ordering: lifecycle methods, handlers, helpers, render
 
 --
 
-* Don't store things on the component instance.
+* Don't store things on the component instance
 
 --
 
-* Callback `refs`, callback `setState`.
+* Callback `refs`, callback `setState`
 
 --
 
-* Always bind instance methods in the constructor.
+* Always bind instance methods in the constructor
 
 --
 
@@ -113,11 +113,11 @@ class: middle
 
 --
 
-* Use lazy loading.
+* Use lazy loading
 
 --
 
-* Use higher-order components.
+* Use higher-order components
 
 ---
 
@@ -366,6 +366,8 @@ class: middle
 class: middle
 
 ```js
+// Adventure: a single ►
+
 const canvas = document.getElementById("mycanvas")
 gl = canvas.getContext("webgl")
 ```
@@ -473,7 +475,7 @@ gl.enable(gl.DEPTH_TEST)
 gl.clear(gl.COLOR_BUFFER_BIT)
 gl.viewport(0, 0, canvas.width, canvas.height)
 
-// Gosh, finally..
+// Gosh finally.. 
 gl.drawElements(gl.TRIANGLES, indices.length, gl.UNSIGNED_SHORT, 0)
 ```
 
@@ -606,7 +608,7 @@ https://peterszerzo.github.io/elm-arborist/Egg
 
 --
 
-* It can (and wants to) run anywhere you like
+* It can run anywhere you like
 
 ---
 
