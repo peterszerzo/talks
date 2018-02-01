@@ -596,6 +596,8 @@ https://peterszerzo.github.io/elm-arborist/Egg
 
 ---
 
+class: middle
+
 ## So..
 
 --
