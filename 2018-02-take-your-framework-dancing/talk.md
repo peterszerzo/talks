@@ -233,6 +233,10 @@ const fib = n => {
   if (n === 1) { return 1 }
   return fib(n - 1) + fib(n - 2)
 }
+
+/* --- */
+
+// ??
 ```
 
 ---
@@ -562,7 +566,7 @@ class: middle
 
 class: middle
 
-> Is there a more humane representation of a user interface's code?
+> Is there a more expressive representation of a UI codebase?
 
 ---
 
@@ -587,6 +591,22 @@ class: center, middle
 --
 
 https://peterszerzo.github.io/elm-arborist/Egg
+
+---
+
+## So..
+
+--
+
+* `React` is permissive and flexible
+
+--
+
+* It is not just for the DOM
+
+--
+
+* It can (and wants to) run anywhere you like
 
 ---
 
