@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Peter out of work | Frontend for everyone</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=PT+Sans);
+      @import url(https://fonts.googleapis.com/css?family=PT+Serif);
+      @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
+
+      * {
+        -webkit-font-smoothing: antialiased;
+      }
+
+      body {
+        font-family: 'PT Sans', sans-serif;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-weight: normal;
+        letter-spacing: 0.05rem;
+      }
+
+      h1 {
+        font-size: 4rem;
+      }
+
+      h2 {
+        font-size: 3rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4)
+      }
+
+      h3 {
+        font-size: 2rem;
+      }
+
+      ul {
+        padding-left: 1em;
+      }
+
+      p,
+      a,
+      li,
+      blockquote {
+        font-size: 1.5rem;
+      }
+
+      blockquote {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 6px 18px;
+        border-left: 4px solid white;
+        background: rgba(0, 0, 0, 0.1);
+      }
+
+      blockquote p {
+        margin: 0;
+      }
+
+      .hero h1 {
+        max-width: 95%;
+        margin: auto;
+      }
+
+      .hero h3 {
+        opacity: 0.8;
+      }
+
+      .hero p {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        letter-spacing: 0.04rem;
+        transform: translateX(-50%);
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      img {
+        max-width: 760px;
+      }
+
+      code:not(.remark-code) {
+        background-color: rgba(0, 0, 0, 0.15);
+        border-radius: .25rem;
+        padding-left: .5rem;
+        padding-right: .5rem;
+      }
+
+      .remark-container {
+        color: #FFFFFF;
+      }
+
+      .remark-slide-container {
+        background: #7C2C5E;
+      }
+
+      .remark-container,
+      .remark-slide-content {
+        background: none;
+      }
+
+      .remark-code,
+      .remark-inline-code {
+        font-family: 'Source Code Pro', monospace;
+      }
+
+      .remark-code {
+        border-radius: .25rem;
+      }
+
+      .remark-code.hljs {
+        padding: 1rem;
+        line-height: 1.5;
+      }
+
+      .remark-slide-scaler {
+        box-shadow: none;
+      }
+
+      .remark-slide-number {
+        display: none;
+      }
+
+      .remark-slide li {
+        margin: 1rem 0;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="source"></textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+    <script>
+      fetch("talk.md")
+      .then(function (res) {
+        return res.text()
+      })
+      .then(function (md) {
+        var node = document.getElementById("source")
+        node.innerText = md
+        return node
+      })
+      .then(function (node) {
+        remark.create({
+          ratio: "4:3"
+        })
+      })
+      .catch(function (err) {
+        console.log(err)
+      })
+    </script>
+  </body>
+</html>
