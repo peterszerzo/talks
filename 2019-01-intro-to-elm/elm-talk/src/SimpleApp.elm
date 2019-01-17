@@ -48,7 +48,9 @@ update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
         Reverse ->
-            ( { model | value = String.reverse model.value }, Cmd.none )
+            ( { model | value = String.reverse model.value }
+            , Cmd.none
+            )
 
 
 

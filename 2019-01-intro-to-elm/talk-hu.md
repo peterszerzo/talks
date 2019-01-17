@@ -6,31 +6,31 @@ class: center, middle
 
 class: middle
 
-* looks suspiciously like Haskell
+* kísértetiesen hasonlít a Haskell-re
 
 --
 
-* compiles to JavaScript
+* JavaScript-re kompilál
 
 --
 
-* targets the web
+* web frontendre van kifejlesztve
 
 ---
 
 class: middle
 
-## Why?
+## Miért?
 
 ---
 
 class: middle
 
-* variable mutation: `const`, `Object.assign`
+* változók: `const`, `Object.assign`
 
 --
 
-* declarative programming: `Array.reduce`
+* deklaratív: `Array.reduce`
 
 --
 
@@ -42,27 +42,27 @@ class: middle
 
 --
 
-> There is nothing wrong with JavaScript
+> A JavaScript-tel nincs semmi baj
 
 ---
 
 class: middle
 
-* variable mutation: `const`, `Object.assign`
+* változók: `const`, `Object.assign`
 
-* declarative programming: `Array.reduce`
+* deklaratív: `Array.reduce`
 
 * types: `interface Dog { breed: string }`
 
 * backend-frontend: `OpenAPI`, `GraphQL`
 
-> Runtime error in a 50.000 LOC frontend..
+> Ha runtime hiba kerül egy 50.000 soros frontendbe..
 
 ---
 
 class: middle
 
-### Still..
+### Mégis..
 
 --
 
@@ -76,27 +76,27 @@ class: middle
 
 class: middle
 
-### Moralize responsible programming 💩
+### Moralizáljuk a felelős programozást 💩
 
 ---
 
 class: middle
 
-### Guarantee correct programs 🎉
+### Garantáljunk egy helyes programot 🎉
 
 ---
 
 class: middle, hero
 
-# Intro to Elm
+# Bevezető Elm
 
-### Frontends with guarantees
+### Felhasználófelületek garanciákkal
 
 ---
 
 class: middle
 
-## Peter
+## Péter
 
 --
 
@@ -233,19 +233,19 @@ class: middle
 
 class: middle
 
-## Live examples
+## Élő példák
 
 --
 
-* show some HTML (with cats)
+* mutatunk egy kis HTML-t (macskákkal)
 
 --
 
-* simple app
+* egy egyszerű app
 
 --
 
-* dog photos 🐩🐶🐕
+* kutyafotók 🐩🐶🐕
 
 ---
 
@@ -257,7 +257,7 @@ class: center, middle
 
 class: middle
 
-## What if we can't write Elm
+## Ha nem dolgozhatunk Elm-ben
 
 [Example](https://codesandbox.io/s/k5po8o1873)
 
@@ -265,7 +265,7 @@ class: middle
 
 class: middle
 
-## Reading
+## Olvasnivalók
 
 --
 

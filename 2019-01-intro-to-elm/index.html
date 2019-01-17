@@ -47,6 +47,10 @@
         font-size: 1.5rem;
       }
 
+      code {
+        font-size: 1.375rem;
+      }
+
       blockquote {
         margin-left: 0;
         margin-right: 0;
@@ -97,7 +101,7 @@
       }
 
       .remark-slide-container {
-        background: #064854;
+        background: #15273A;
       }
 
       .remark-container,
@@ -136,7 +140,8 @@
     <textarea id="source"></textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
     <script>
-      fetch("talk.md")
+      var url = window.location.search.indexOf("lang=hu") > -1 ? "talk-hu.md" : "talk.md"
+      fetch(url)
       .then(function (res) {
         return res.text()
       })
