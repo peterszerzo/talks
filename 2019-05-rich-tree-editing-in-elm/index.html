@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Peter out of work | Frontend for everyone</title>
+    <title>Rich Text Editing in Elm</title>
     <meta charset="utf-8">
     <style>
       @import url(https://fonts.googleapis.com/css?family=PT+Sans);
@@ -97,7 +97,7 @@
       }
 
       .remark-slide-container {
-        background: #7C2C5E;
+        background: rgb(50, 57, 91);
       }
 
       .remark-container,
@@ -142,7 +142,7 @@
       })
       .then(function (md) {
         var node = document.getElementById("source")
-        node.innerText = md
+        node.innerHTML = md
         return node
       })
       .then(function (node) {
