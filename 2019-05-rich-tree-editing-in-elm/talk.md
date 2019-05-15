@@ -8,15 +8,23 @@ class: middle
 
 ### I code in a text editor with files and folders
 
---
+---
 
-..it's ok
+class: middle
+
+![Files and folders](media/files-and-folders.png)
 
 ---
 
 class: middle
 
-### But in a previous life..
+> ..it's ok
+
+---
+
+class: middle
+
+## But in a previous life..
 
 <iframe width="768" height="400" src="https://www.youtube.com/embed/DT9Z_tPww1E?rel=0" frameborder="0" allowfullscreen></iframe>
 
@@ -44,13 +52,15 @@ class: middle
 
 ### ..but a tricky sell
 
+--
+
+Best stick to the humble tree 🌲
+
 ---
 
 class: center, middle, hero
 
 # Rich Tree Editing in Elm
-
-### `elm-arborist`
 
 @peterszerzo
 
@@ -85,6 +95,8 @@ class: middle
 
 class: middle
 
+## elm-arborist, v8.0.0
+
 1. Demo
 2. API
 3. History
@@ -102,6 +114,21 @@ https://peterszerzo.github.io/elm-arborist 🌟🌟🌟
 class: middle
 
 ## 2. API
+
+---
+
+class: middle
+
+```elm
+arboristSettings : List (Arborist.Setting MyNode)
+arboristSettings =
+    [ Settings.keyboardNavigation True
+    , Settings.defaultNode (MyNode "A" "Q")
+    , Settings.nodeWidth 100
+    , Settings.level 80
+    , Settings.gutter 20
+    ]
+```
 
 ---
 
@@ -137,9 +164,40 @@ class: middle
 
 ```elm
 type alias Model =
-    { arborist : Arborist.State MyNode
+    { arborist : Arborist.State
     , tree : Tree.Tree MyNode
     }
+```
+
+---
+
+class: middle
+
+```elm
+view : Model -> Html Msg
+view model =
+    Arborist.view []
+        { state = model.arborist
+        , tree = model.tree
+        , settings = arboristSettings
+        , nodeView = nodeView
+        , toMsg = Arborist
+        }
+```
+
+---
+
+class: middle
+
+```elm
+nodeView : Arborist.NodeView MyNode Msg
+nodeView lotsOfInformation maybeNode =
+    case maybeNode of
+        Just node ->
+            text node.question
+
+        Nothing ->
+            text "+ add node"
 ```
 
 ---
@@ -177,30 +235,13 @@ update msg model =
 class: middle
 
 ```elm
-arboristSettings : List (Arborist.Setting MyNode)
-arboristSettings =
-    [ Settings.keyboardNavigation True
-    , Settings.defaultNode (MyNode "A" "Q")
-    , Settings.nodeWidth 100
-    , Settings.level 80
-    , Settings.gutter 20
-    ]
-```
-
----
-
-class: middle
-
-```elm
-view : Model -> Html.Html Msg
-view model =
-    Arborist.view []
-        { state = model.arborist
-        , tree = model.tree
-        , nodeView = nodeView
-        , settings = arboristSettings
-        , toMsg = Arborist
-        }
+subscriptions : Model -> Sub Msg
+subscriptions model =
+    Arborist.subscriptions arboristSettings model.arborist model.tree
+        |> Sub.map
+            (\( newState, newTree ) ->
+                Arborist (\_ _ -> ( newState, newTree ))
+            )
 ```
 
 ---
@@ -211,15 +252,21 @@ class: middle
 
 --
 
-* no more `Arborist.Model`, `Arborist.Msg`, `Arborist.update`, `Arborist.view`
+* no more `Model`, `Msg`, `update`, `view`
 
 --
 
-* `Arborist.Model -> Arborist.State` + no longer holds on to the tree itself
+* `Arborist.Model -> Arborist.State` + refactor
 
 --
 
 * features to handle large trees: keyboard nav and clustering
+
+---
+
+class: middle
+
+![elm-arborist package](media/elm-arborist.png)
 
 ---
 
