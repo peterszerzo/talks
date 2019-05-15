@@ -50,7 +50,7 @@ class: middle
 
 class: middle
 
-### ..but a tricky sell
+### ..but often a tricky sell
 
 --
 
@@ -99,7 +99,7 @@ class: middle
 
 1. Demo
 2. API
-3. History
+3. What has changed
 
 ---
 
@@ -248,7 +248,7 @@ subscriptions model =
 
 class: middle
 
-## 3. Since v7
+## 3. What has changed
 
 --
 
